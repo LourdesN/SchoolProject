@@ -1,0 +1,449 @@
+body{
+    background-size: 100%;
+    background-repeat: repeat;
+    background-image: linear-gradient(to right,  #accbee, #e7f0fd );
+  }
+  h3{
+    color: darkblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+  }
+  li{
+    list-style: none;
+  }
+  /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color:  #accbee;
+  position: sticky; 
+  top: 0;
+  width: 100%; 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+img{
+  border-radius: 50%;
+  display:inline block;
+  width: 440px;
+  height: 440px;
+}
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+ } 
+ .text {
+  color: black;
+  width: 100%;
+  margin: 0, 2px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+  background-color: #ddd;
+  font-style: italic;
+  text-decoration: none;
+}
+.searchbox{
+  float: right;
+  padding-top: 2%;
+  border: 2px  black;
+}
+input[type=txt]{
+  border-radius: 9px;
+  background-color: #e7f0fd;
+}
+.searchbox button{
+  background-color: grey;
+  border-radius: 9px;
+  
+}
+::placeholder{
+  color: darkblue;
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+.searchbox button:hover{
+  background-color: #ddd;
+}
+
+/* Style inputs */
+input[type=text],input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+label{
+  display: block;
+  float: left;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Create two columns that float next to eachother */
+.columns {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+margin-left: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .flex-container, .navbar{   
+    flex-direction: column;
+  }
+}
+.purpose{
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.tat{
+  margin-top: 3%;
+}
+
+/* doctors section */
+.flex-container{
+  margin: 120px auto;
+  padding: 10px;
+  gap: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.flex-container > div {
+  background-color: whitesmoke;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 12px;
+}
+.doctors{
+  height: 220px;
+  width: 200px;
+  border-radius: 12px;
+}
+.title{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 15px;
+}
+.text {
+  color: black;
+  width: 100%;
+  margin: 0, 2px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Testimonials styling */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Add a background color to the active dot/circle */
+.active {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+.author {
+  color: rgb(10, 28, 62);
+  font-size: large;
+}
+ 
+/* Our medical partners */
+#slideshow {
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+.slide,.partners {
+  float: left;
+  height: 100px;
+  width: 200px;
+  
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+   
+/* Calculate the total width on the
+  basis of number of slides */
+  width: calc(200px * 6);
+ 
+/* Specify the animation with the
+  duration and speed */
+  animation: slide 10s ease infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+ 
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+   
+/* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+ 
+  40% {
+    margin-left: calc(-200px * 1);
+  }
+ 
+  60% {
+    margin-left: calc(-200px * 2);
+  }
+ 
+  80% {
+    margin-left: calc(-200px * 3);
+  }
+  100% {
+    margin-left: calc(-200px * 5);
+  }
+}
+
+/* Styling service section */
+section {
+  height: 100%;
+  width: 50%;
+}
+.ro {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
+.column {
+  width: 50%;
+  text-align: center;
+ margin-inline-start: auto;
+ margin-left: 10%;
+ 
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+.service{
+  border-radius: 12px;
+  height: 100%;
+  width: 50%;
+}
+
+/* styling Footer*/
+.containers{
+	max-width: 1170px;
+	margin:auto;
+}
+.rows{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #accbee;
+    padding: 5px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 5px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: blue;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 5px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
