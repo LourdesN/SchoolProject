@@ -149,9 +149,9 @@ margin-left: 30%;
 
 /* doctors section */
 .flex-container{
-  margin: 120px auto;
+  margin: 12px auto;
   padding: 10px;
-  gap: 50px 100px;
+  gap: 50px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
