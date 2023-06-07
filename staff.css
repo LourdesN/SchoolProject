@@ -64,6 +64,9 @@ h4 {
 
 a {
   color: #041e4f;
+  font-style:italic;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .register {
