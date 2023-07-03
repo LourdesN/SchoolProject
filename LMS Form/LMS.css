@@ -1,0 +1,68 @@
+body{
+    background-image: linear-gradient( to left,  rgba(187,232,255,1), rgba(4,78,116,1));
+    margin-left: 33%;
+}
+.form{
+    margin-top:7% ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    width: 500px;
+    height: 560px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 14px 14px 20px  rgba(4,78,116,1), -14px -14px 20px  rgba(4,78,116,1);
+    
+}
+    
+h1 {
+    margin-top: 0px;
+    color:black;
+    padding: 15px;
+}
+input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 10px;
+    font-size: 14px;
+    border-radius: 12px;
+   
+  }
+  .select, textarea{
+    border-radius: 12px;
+    height: 40px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+
+  }
+  .select{
+    width: 42%;
+  }
+
+  button{
+   border-radius: 12px;
+   height: 35px;
+   margin-top: 27px;
+   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 10%, rgba(166,239,253,1) 90.1% );
+   width: 190px;
+   margin-left: 50%;
+  }
+  button:hover{
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+    cursor: pointer;
+  }
+  input[type=date]{
+    width: 80%;
+  }
+  table{
+    border-spacing: 3.5px;
+  }
+  input[type=file]{
+    width:90% ;
+    height: 17px;
+    padding-top: 2%;
+    cursor: pointer;
+  }

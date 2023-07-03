@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<Html>
+    <head><title>Employee leave Request</title>
+        <link rel="stylesheet" href="LMS.css">
+    </head>
+    <body>
+
+   <!--Form section-->
+<form method="post" action="./New" class="form">
+        <h1>Leave Application Form</h1>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td>Last Name:</td>
+            </tr>
+            <tr>
+                <td><input type="text" value="Lourdes" readonly disabled></td>
+                <td><input type="text" value="Nganga" readonly disabled></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>Available Leave Days:</td>
+            </tr>
+            <tr>
+                <td><input type="text" value="lourdeswairimu@gmail.com" readonly disabled></td>
+                <td><input type="text" value="12" readonly disabled></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="type">Select Leave Type</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select id="type" name="type" class="select" required >
+                        <option value="">Select leave type</option>
+                        <option value="normal">Normal Leave</option>
+                        <option value="maternity">Maternity Leave</option>
+                        <option value="paternity">Paternity Leave</option>
+                        <option value="sick">Sick Leave</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Start Date:</td>
+                <td>End Date:</td>
+            </tr>
+            <tr>
+                <td><input type="date" required></td>
+                <td><input type="date" style="width: 85%;" required></td>            
+            </tr>
+            <tr>
+                <td>Reason for leave:</td>
+                <td id="reason" style="visibility: visible;">Attach file</td>
+            </tr>
+            <tr>
+                <td><textarea></textarea></td>
+                <td id="file-attachment" style="visibility: visible;"><input type="file"></td>            
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" name="request">Submit Application</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</Html>
