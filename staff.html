@@ -8,10 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ <link rel="stylesheet" href="staff.css">
 </head>
 <body class="align">
-    <link rel="stylesheet" href="staff.css">
   <div class="grid align__item">
 
     <div class="register">
@@ -20,19 +19,19 @@
 
       <h4> Staff Login</h4>
 
-      <form action="" method="post" class="form">
+      <form action="./Staff Authentication.php" method="post" class="form">
 
         <div class="form__field">
           <label ><i class='fa fa-user'></i></label>
-          <input type="email" placeholder="Email" autofocus required>
+          <input type="email" placeholder="Email" name="email" autofocus required>
         </div>
 
         <div class="form__field">
           <label><i class="fa fa-lock"></i></label>
-          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Password" name="password" required>
         </div>
         <div class="form__field">
-        <input type="submit" value="LOGIN" class="button">
+        <input type="submit" value="LOGIN" class="button" name="login">
         </div>
       </form>
       <p><a href="./password.html">Forgot password...</a></p>
